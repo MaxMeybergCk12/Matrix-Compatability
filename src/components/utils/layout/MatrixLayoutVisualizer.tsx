@@ -43,7 +43,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
     <div className="flex items-center justify-center gap-4">
       {/* Matrix A */}
       <div 
-        className="relative border-2 border-red-600 bg-red-50" 
+        className="relative border-2 border-gray-600 bg-gray-50" 
         style={{ 
           width: layout.matrixA.width, 
           height: layout.matrixA.height 
@@ -51,7 +51,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
       >
         {/* Left Bracket */}
         <div 
-          className="absolute text-red-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixAStructure.bracketDimensions.left.x,
             top: matrixAStructure.bracketDimensions.left.y,
@@ -66,7 +66,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         {matrixAStructure.positions.map((pos, index) => (
           <div 
             key={index} 
-            className="absolute bg-red-200 border border-red-400"
+            className="absolute bg-gray-200 border border-gray-400"
             style={{
               left: pos.x,
               top: pos.y,
@@ -78,7 +78,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         
         {/* Right Bracket */}
         <div 
-          className="absolute text-red-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixAStructure.bracketDimensions.right.x,
             top: matrixAStructure.bracketDimensions.right.y,
@@ -95,7 +95,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
       
       {/* Matrix B */}
       <div 
-        className="relative border-2 border-yellow-600 bg-yellow-50" 
+        className="relative border-2 border-gray-600 bg-gray-50" 
         style={{ 
           width: layout.matrixB.width, 
           height: layout.matrixB.height 
@@ -103,7 +103,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
       >
         {/* Left Bracket */}
         <div 
-          className="absolute text-yellow-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixBStructure.bracketDimensions.left.x,
             top: matrixBStructure.bracketDimensions.left.y,
@@ -118,7 +118,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         {matrixBStructure.positions.map((pos, index) => (
           <div 
             key={index} 
-            className="absolute bg-yellow-200 border border-yellow-400"
+            className="absolute bg-gray-200 border border-gray-400"
             style={{
               left: pos.x,
               top: pos.y,
@@ -130,7 +130,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         
         {/* Right Bracket */}
         <div 
-          className="absolute text-yellow-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixBStructure.bracketDimensions.right.x,
             top: matrixBStructure.bracketDimensions.right.y,
@@ -147,7 +147,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
       
       {/* Matrix C */}
       <div 
-        className="relative border-2 border-blue-600 bg-blue-50" 
+        className="relative border-2 border-gray-600 bg-gray-50" 
         style={{ 
           width: layout.matrixC.width, 
           height: layout.matrixC.height 
@@ -155,7 +155,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
       >
         {/* Left Bracket */}
         <div 
-          className="absolute text-blue-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixCStructure.bracketDimensions.left.x,
             top: matrixCStructure.bracketDimensions.left.y,
@@ -170,7 +170,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         {matrixCStructure.positions.map((pos, index) => (
           <div 
             key={index} 
-            className="absolute bg-blue-200 border border-blue-400"
+            className="absolute bg-gray-200 border border-gray-400"
             style={{
               left: pos.x,
               top: pos.y,
@@ -182,7 +182,7 @@ const MatrixLayoutVisualizer: React.FC<MatrixLayoutVisualizerProps> = ({
         
         {/* Right Bracket */}
         <div 
-          className="absolute text-blue-600 font-bold text-2xl flex items-center justify-center"
+          className="absolute text-gray-600 font-bold text-2xl flex items-center justify-center"
           style={{
             left: matrixCStructure.bracketDimensions.right.x,
             top: matrixCStructure.bracketDimensions.right.y,
